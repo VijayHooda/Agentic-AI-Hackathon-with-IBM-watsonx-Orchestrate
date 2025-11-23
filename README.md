@@ -87,21 +87,4 @@ I included commented example pseudocode in `main.py` demonstrating how to call a
 
 ---
 
-# Quick notes & judge-pleasing pointers (so you win this in 1 hour demo)
 
-1. **Make partner tech visible**: In your pitch / slide deck say: “Our demo uses watsonx Orchestrate (planned) — local demo shows identical flow; presto.” If you have watsonx, call it in the extraction and drafting functions.
-2. **Metrics**: Use the analytics endpoint to show `leads_processed` and `auto_actions` – say "in simulation we save X minutes per lead".
-3. **Human in loop**: The judge will love the approve/edit step — it shows responsibility and production realism.
-4. **Backup video**: Record a short screencast of the demo (2–3 min) — if live demo flops, judges will still see flow.
-5. **Slides**: 6 slides: Problem → Solution → Architecture (Mermaid) → Live Demo snapshots → Metrics & Business value → Roadmap & Ask.
-
----
-
-If you want now, I can:
-
-- Generate a **6-slide deck** (content + speaker notes) in the next 3–6 minutes.
-- Produce a short **2-3 minute backup demo script** and sample narration for your recorded video.
-- Swap out the placeholder LLM parts with a **concrete watsonx Orchestrate request template** if you give me your watsonx API shape (or I can draft based on common IBM patterns).
-
-Which of those should I do next?
-::contentReference[oaicite:0]{index=0}
