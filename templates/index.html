@@ -1,0 +1,55 @@
+<!-- templates/index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Agentic Sales Ops Agent — Demo</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/static/styles.css">
+  <style>
+    body { font-family: Inter, Arial, sans-serif; margin: 30px; color:#111; }
+    .container { max-width:900px; margin: 0 auto; }
+    input, textarea { width:100%; padding:8px; margin:6px 0; border-radius:6px; border:1px solid #ddd;}
+    button { padding:8px 12px; border-radius:6px; background:#0b74de; color:white; border:none; cursor:pointer;}
+    .card { border:1px solid #eee; padding:12px; border-radius:8px; margin-top:12px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.03);}
+    pre { white-space:pre-wrap; word-wrap:break-word; background:#fafafa; padding:10px; border-radius:6px; }
+    .muted { color:#666; font-size:0.9em; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Agentic Sales Ops Agent — Live Demo</h1>
+  <p class="muted">Enter lead details, run the agent, review the suggestion and approve to execute mock actions (CRM, Calendar, Outbox).</p>
+
+  <div class="card">
+    <h3>New Lead</h3>
+    <label>Company</label>
+    <input id="company" placeholder="Acme Cloud" />
+    <label>Contact Name</label>
+    <input id="contact_name" placeholder="Jane Doe" />
+    <label>Role</label>
+    <input id="role" placeholder="CTO" />
+    <label>Painpoints (brief)</label>
+    <textarea id="painpoints" rows="3" placeholder="High infra costs, scaling problems"></textarea>
+    <label>Notes</label>
+    <textarea id="notes" rows="2" placeholder="Referred by partner X"></textarea>
+    <button id="runBtn">Run Agent</button>
+  </div>
+
+  <div id="suggestionArea"></div>
+
+  <div class="card" style="margin-top:18px;">
+    <h3>Analytics</h3>
+    <div id="analytics">No data yet.</div>
+  </div>
+
+  <div class="card" style="margin-top:18px;">
+    <h3>Audit Log (last)</h3>
+    <pre id="audit">No audit yet.</pre>
+  </div>
+
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
